@@ -7,15 +7,15 @@ function App() {
 
   return (
     <div
-  className="p-2"
-  style={!bn?{ backgroundColor: "#fff", color: "#111" }:{ backgroundColor: "#111", color: "#fff" }}
-  >
-  <h3>{!bn ? "Modo Claro" : "Modo Oscuro"}</h3>
-  <h2>Este bloque cambia sus estilos usando un booleano en el estado</h2>
-  <button
-    onClick={() => setBn(!bn)}
-    >Cambiar a {!bn ? "Modo Oscuro" : "Modo Claro"}</button>
-</div>
+      className="p-2"
+      style={!bn?{ backgroundColor: "#fff", color: "#111" }:{ backgroundColor: "#111", color: "#fff" }}
+      >
+      <h3>{!bn ? "Modo Claro" : "Modo Oscuro"}</h3>
+      <h2>Este bloque cambia sus estilos usando un booleano en el estado</h2>
+      <button
+        onClick={() => setBn(!bn)}
+        >Cambiar a {!bn ? "Modo Oscuro" : "Modo Claro"}</button>
+    </div>
 
   );
 }
